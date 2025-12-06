@@ -10,6 +10,7 @@ const features = [
     title: 'Affordable & Transparent Pricing',
     description: 'No hidden costs. Clear, upfront pricing for all services.',
     gradient: 'from-accent-green to-primary-cyan',
+    image : 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
   },
   {
     icon: Package,
@@ -94,7 +95,33 @@ export default function WhyChooseUs() {
                 <p className="text-primary-light/70 leading-relaxed">
                   {feature.description}
                 </p>
+
+
+              {/* Feature-specific BG Image */}
+             {feature.image && (
+                <div className="absolute inset-0">
+                  <Image
+                    src={feature.image}
+                    alt={feature.title}
+                    fill
+                    className="object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300"
+                  />
+                </div>
+              )}
+
+
+
+
+
+
               </div>
+
+              
+             
+
+
+
+
             </motion.div>
           ))}
         </div>

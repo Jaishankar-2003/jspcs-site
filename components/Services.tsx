@@ -82,7 +82,7 @@ export default function Services() {
           alt="PC Build Background"
           fill
           className="object-cover"
-          quality={50}
+          quality={70}
         />
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
