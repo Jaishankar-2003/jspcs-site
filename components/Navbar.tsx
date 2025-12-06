@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Phone, Linkedin, Facebook, Instagram } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import Logo from './Logo'
 
@@ -42,7 +42,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -52,6 +52,42 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            {/* Social Media Icons */}
+            <div className="flex items-center gap-2 ml-2 border-l border-white/20 pl-4">
+              <motion.a
+                href="https://www.linkedin.com/company/jai-shankar-pc-services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#0077B5]/50 transition-all duration-300"
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4" />
+              </motion.a>
+              <motion.a
+                href="https://www.facebook.com/jaishankarpcservices"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300"
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4" />
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/jaishankarpcservices"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"
+                whileHover={{ scale: 1.1, y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+              </motion.a>
+            </div>
             <motion.a
               href="tel:9842139997"
               className="px-6 py-2 bg-primary-blue text-white rounded-full font-semibold flex items-center gap-2"
@@ -91,6 +127,39 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            {/* Social Media Links - Mobile */}
+            <div className="flex items-center justify-center gap-3 py-4 border-t border-white/10">
+              <motion.a
+                href="https://www.linkedin.com/company/jai-shankar-pc-services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center text-white"
+                whileTap={{ scale: 0.9 }}
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </motion.a>
+              <motion.a
+                href="https://www.facebook.com/jaishankarpcservices"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white"
+                whileTap={{ scale: 0.9 }}
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/jaishankarpcservices"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white"
+                whileTap={{ scale: 0.9 }}
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </motion.a>
+            </div>
             <motion.a
               href="tel:9842139997"
               className="block px-6 py-2 bg-primary-blue text-white rounded-full font-semibold text-center"

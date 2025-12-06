@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
+import { Phone, Mail, MapPin, MessageCircle, Linkedin, Facebook, Instagram } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Contact() {
@@ -99,6 +99,52 @@ export default function Contact() {
                     Available 24/7
                   </a>
                 </div>
+              </div>
+            </div>
+
+            {/* Social Media */}
+            <div className="glass-strong rounded-2xl p-6 neon-border">
+              <h3 className="text-xl font-bold text-white mb-4">Follow Us</h3>
+              <p className="text-primary-light/70 text-sm mb-4">
+                Stay connected for updates, tips, and exclusive offers
+              </p>
+              <div className="flex items-center gap-3">
+                <motion.a
+                  href="https://www.linkedin.com/company/jai-shankar-pc-services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center gap-2 text-white font-medium hover:shadow-lg hover:shadow-[#0077B5]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  <span className="text-sm">LinkedIn</span>
+                </motion.a>
+                <motion.a
+                  href="https://www.facebook.com/jaishankarpcservices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center gap-2 text-white font-medium hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                  <span className="text-sm">Facebook</span>
+                </motion.a>
+                <motion.a
+                  href="https://www.instagram.com/jaishankarpcservices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center gap-2 text-white font-medium hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                  <span className="text-sm">Instagram</span>
+                </motion.a>
               </div>
             </div>
 

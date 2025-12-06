@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { DollarSign, Clock, Package, Truck, Award } from 'lucide-react'
+import { DollarSign, Clock, Package, Truck, Award , ThumbsUp} from 'lucide-react'
 
 const features = [
   {
@@ -35,6 +35,12 @@ const features = [
     description: '5+ years of experience in advanced motherboard and component repair.',
     gradient: 'from-primary-blue to-accent-green',
   },
+  {
+    icon: ThumbsUp,
+    title: 'Comprehensive Warranty',
+    description: 'If the same issue reoccurs within 6 months, the repair is on us.',
+    gradient: 'from-accent-green to-primary-cyan',
+  }
 ]
 
 export default function WhyChooseUs() {

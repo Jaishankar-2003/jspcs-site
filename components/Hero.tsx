@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, MessageCircle } from 'lucide-react'
+import { Phone, MessageCircle, Linkedin, Facebook, Instagram } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Logo from './Logo'
@@ -112,13 +112,94 @@ export default function Hero() {
               className="group relative px-8 py-4 glass border-primary-cyan/50 text-white rounded-full font-semibold text-lg overflow-hidden neon-border"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >
+            > 
               <span className="absolute inset-0 bg-primary-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Chat
               </span>
             </motion.a>
+{/* ----------------------------------------------------------------------------- */}
+<motion.a
+              href="https://www.linkedin.com/company/jai-shankar-pc-services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#0077B5]/50 transition-all duration-300 backdrop-blur-sm"
+              whileHover={{ scale: 1.15, y: -3 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-6 h-6" />
+            </motion.a>
+            <motion.a
+              href="https://www.facebook.com/jaishankarpcservices"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300 backdrop-blur-sm"
+              whileHover={{ scale: 1.15, y: -3 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Facebook"
+            >
+              <Facebook className="w-6 h-6" />
+            </motion.a>
+            <motion.a
+              href="https://www.instagram.com/jaishankarpcservices"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300 backdrop-blur-sm"
+              whileHover={{ scale: 1.15, y: -3 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Instagram"
+            >
+              <Instagram className="w-6 h-6" />
+            </motion.a>
+
+
+{/* ----------------------------------------------------------------------------- */}
+
+          </motion.div>
+
+          {/* Social Media Links */}
+          <motion.div
+            className="flex items-center justify-center gap-4 mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+          >
+             {/* <span className="text-primary-light/60 text-sm mr-2">Follow us:</span> 
+            <motion.a
+              href="https://www.linkedin.com/company/jai-shankar-pc-services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#0077B5]/50 transition-all duration-300 backdrop-blur-sm"
+              whileHover={{ scale: 1.15, y: -3 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-6 h-6" />
+            </motion.a>
+            <motion.a
+              href="https://www.facebook.com/jaishankarpcservices"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300 backdrop-blur-sm"
+              whileHover={{ scale: 1.15, y: -3 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Facebook"
+            >
+              <Facebook className="w-6 h-6" />
+            </motion.a>
+            <motion.a
+              href="https://www.instagram.com/jaishankarpcservices"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300 backdrop-blur-sm"
+              whileHover={{ scale: 1.15, y: -3 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Instagram"
+            >
+              <Instagram className="w-6 h-6" />
+            </motion.a> */}
           </motion.div>
         </motion.div>
       </div>

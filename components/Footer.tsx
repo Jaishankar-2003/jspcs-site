@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, Mail, MessageCircle } from 'lucide-react'
+import { Phone, Mail, MessageCircle, Linkedin, Facebook, Instagram } from 'lucide-react'
 import Logo from './Logo'
 
 export default function Footer() {
@@ -21,9 +21,48 @@ export default function Footer() {
             <div className="mb-4">
               <Logo size="md" showText={true} />
             </div>
-            <p className="text-primary-light/70 leading-relaxed">
+            <p className="text-primary-light/70 leading-relaxed mb-6">
               Expert PC & Laptop Repair | Chip-Level | Custom Builds
             </p>
+            {/* Social Media Links */}
+            <div>
+              <h4 className="text-sm font-semibold text-white mb-3">Follow Us</h4>
+              <div className="flex items-center gap-3">
+                <motion.a
+                  href="https://www.linkedin.com/company/jai-shankar-pc-services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#0077B5]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </motion.a>
+                <motion.a
+                  href="https://www.facebook.com/jaishankarpcservices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </motion.a>
+                <motion.a
+                  href="https://www.instagram.com/jaishankarpcservices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </motion.a>
+              </div>
+            </div>
           </motion.div>
 
           {/* Quick Links */}
@@ -100,11 +139,52 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-white/10 pt-8 text-center">
-          <p className="text-primary-light/50">
-            © {currentYear} Jai Shankar PC Services. All Rights Reserved.
-          </p>
+        {/* Social Media Bar & Copyright */}
+        <div className="border-t border-white/10 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
+            {/* Social Media Links - Centered on mobile */}
+            <div className="flex items-center gap-4">
+              <span className="text-primary-light/70 text-sm font-medium">Connect with us:</span>
+              <div className="flex items-center gap-3">
+                <motion.a
+                  href="https://www.linkedin.com/company/jai-shankar-pc-services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#0077B5]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-4 h-4" />
+                </motion.a>
+                <motion.a
+                  href="https://www.facebook.com/jaishankarpcservices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </motion.a>
+                <motion.a
+                  href="https://www.instagram.com/jaishankarpcservices"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-4 h-4" />
+                </motion.a>
+              </div>
+            </div>
+            <p className="text-primary-light/50 text-sm">
+              © {currentYear} Jai Shankar PC Services. All Rights Reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
