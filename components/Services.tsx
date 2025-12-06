@@ -68,7 +68,7 @@ const services = [
     title: 'PC Upgrades',
     description: 'RAM upgrades, SSD installation, graphics card upgrades, and performance enhancements for faster computing.',
     color: 'from-primary-blue to-accent-green',
-    image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=435&auto=format&fit=crop&&w=800&q=80',
   },
 ]
 
