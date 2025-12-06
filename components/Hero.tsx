@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Phone, MessageCircle } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import Logo from './Logo'
 
 export default function Hero() {
@@ -18,8 +19,22 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          alt="PC Build Background"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/95 via-primary-dark/90 to-primary-dark/95" />
+      </div>
+
+      {/* Animated Background Effects */}
+      <div className="absolute inset-0 overflow-hidden z-0">
         <div
           className="absolute w-96 h-96 rounded-full blur-3xl opacity-20"
           style={{
@@ -50,15 +65,6 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          {/* Logo */}
-          <motion.div
-            className="flex justify-center mb-8"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-          >
-            <Logo size="xl" showText={false} />
-          </motion.div>
 
           <motion.h1
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6"

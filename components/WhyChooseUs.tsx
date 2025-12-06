@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { DollarSign, Clock, Package, Truck, Award } from 'lucide-react'
 
 const features = [
@@ -38,8 +39,19 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="relative py-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id="why-choose-us" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-10">
+        <Image
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          alt="Circuit Board Background"
+          fill
+          className="object-cover"
+          quality={50}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary-dark via-primary-dark/95 to-primary-dark" />
+      </div>
+      <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { CheckCircle2, Clock, Package, Truck } from 'lucide-react'
+import Image from 'next/image'
 
 export default function About() {
   const features = [
@@ -12,8 +13,19 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="relative py-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id="about" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <Image
+          src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          alt="Circuit Board Background"
+          fill
+          className="object-cover"
+          quality={50}
+        />
+        <div className="absolute inset-0 bg-primary-dark/80" />
+      </div>
+      <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,15 +41,21 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative aspect-square rounded-2xl overflow-hidden glass-strong neon-border">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 via-primary-cyan/20 to-transparent" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary-blue to-primary-cyan flex items-center justify-center neon-glow">
-                    <Package className="w-16 h-16 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Expert Service</h3>
-                  <p className="text-primary-light/70">Professional & Reliable</p>
+            <div className="relative aspect-square rounded-2xl overflow-hidden glass-strong neon-border group">
+              <Image
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="PC Repair Workshop"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                quality={90}
+              />
+              {/* Overlay with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/60 via-primary-cyan/40 to-transparent" />
+              {/* Content overlay */}
+              <div className="absolute inset-0 flex items-end p-6">
+                <div className="text-white">
+                  <h3 className="text-2xl font-bold mb-2">Expert Service</h3>
+                  <p className="text-primary-light/90">Professional & Reliable</p>
                 </div>
               </div>
             </div>
