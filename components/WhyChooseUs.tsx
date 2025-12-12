@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { DollarSign, Clock, Package, Truck, Award , ThumbsUp} from 'lucide-react'
+import { image } from 'framer-motion/client'
 
 const features = [
   {
@@ -10,13 +11,14 @@ const features = [
     title: 'Affordable & Transparent Pricing',
     description: 'No hidden costs. Clear, upfront pricing for all services.',
     gradient: 'from-accent-green to-primary-cyan',
-    image : 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image : 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
   },
   {
     icon: Package,
     title: 'Genuine Parts Only',
     description: 'We use only authentic, high-quality components for repairs.',
     gradient: 'from-primary-blue to-primary-cyan',
+    
   },
   {
     icon: Clock,
@@ -104,23 +106,12 @@ export default function WhyChooseUs() {
                     src={feature.image}
                     alt={feature.title}
                     fill
-                    className="object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-300"
+                    className="object-cover opacity-10 group-hover:opacity-20 transition-opacity duration-300"
                   />
                 </div>
               )}
 
-
-
-
-
-
               </div>
-
-              
-             
-
-
-
 
             </motion.div>
           ))}
