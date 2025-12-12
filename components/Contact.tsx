@@ -60,7 +60,7 @@ export default function Contact() {
                     href="tel:9842139997"
                     className="text-primary-cyan hover:text-primary-cyan/80 transition-colors text-lg"
                   >
-                    9842139997
+                    +91 9842139997
                   </a>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function Contact() {
                   href="https://www.instagram.com/jaishankarpcservices"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center gap-2 text-white font-medium hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"
+                  className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-br from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4] flex items-center justify-center gap-2 text-white font-medium hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label="Instagram"
@@ -154,7 +154,7 @@ export default function Contact() {
                 Need instant support?
               </h3>
               <p className="text-primary-light/80 mb-6">
-                📞 9842139997
+                📞 +91 9842139997
                 <br />
                 💬 WhatsApp Support Available 24/7
               </p>

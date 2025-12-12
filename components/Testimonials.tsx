@@ -35,6 +35,46 @@ const testimonials = [
     text: 'Recovered all my important data from a crashed hard drive. Professional service and very reliable. Highly satisfied!',
     location: 'Chennai',
   },
+  {
+    name: 'Selvam',
+    rating: 5,
+    text: 'Recovered all my important data from a crashed hard drive. Professional service and very reliable. Highly satisfied!',
+    location: 'Chennai',
+  },
+  {
+    name: 'Karthik',
+    rating: 5,
+    text: 'My laptop was overheating constantly. They cleaned, serviced, and fixed it perfectly. Works like brand new now. Truly impressed!',
+    location: 'Madurai',
+  },
+  
+  {
+    name: 'Aishwarya',
+    rating: 5,
+    text: 'Amazing chip-level repair! My motherboard was declared dead by others, but they repaired it within a day. Honest and skilled team.',
+    location: 'Coimbatore',
+  },
+  
+  {
+    name: 'Vignesh',
+    rating: 5,
+    text: 'Smooth and fast service. They upgraded my HDD to SSD, and the speed difference is insane. Great value for money!',
+    location: 'Trichy',
+  },
+  
+  {
+    name: 'Meghana',
+    rating: 5,
+    text: 'Their pickup and drop service saved me a lot of time. Transparent pricing and very polite communication. Highly recommend them.',
+    location: 'Bangalore',
+  },
+  
+  {
+    name: 'Arun Kumar',
+    rating: 5,
+    text: 'Got my PC assembled exactly the way I wanted. Premium components, neat cable management, and excellent guidance throughout.',
+    location: 'Hyderabad',
+  }
 ]
 
 export default function Testimonials() {
@@ -54,7 +94,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">

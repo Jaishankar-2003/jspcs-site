@@ -113,7 +113,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             > 
-              <span className="absolute inset-0 bg-primary-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="absolute inset-0 bg-[#25D366]/0  group-hover:bg-[#25D366]/50 transition-all duration-300" />
               <span className="relative flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Chat

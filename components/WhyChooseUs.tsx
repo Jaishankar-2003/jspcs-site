@@ -18,6 +18,7 @@ const features = [
     title: 'Genuine Parts Only',
     description: 'We use only authentic, high-quality components for repairs.',
     gradient: 'from-primary-blue to-primary-cyan',
+    image : 'https://images.unsplash.com/photo-1698440050363-1697e5f0277c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
     
   },
   {
@@ -25,24 +26,30 @@ const features = [
     title: 'Fast Turnaround',
     description: 'Quick diagnosis and efficient service without compromising quality.',
     gradient: 'from-primary-cyan to-secondary-sky',
+    image : 'https://images.unsplash.com/photo-1590402494756-10c265b9d736?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
   },
   {
     icon: Truck,
     title: 'Pickup & Drop Service',
     description: 'Convenient doorstep pickup and delivery for your convenience.',
     gradient: 'from-secondary-sky to-primary-cyan',
+    image : 'https://images.unsplash.com/photo-1595054225874-7d2315262e73?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
+
+  
   },
   {
     icon: Award,
     title: 'Certified Chip-Level Experts',
     description: '5+ years of experience in advanced motherboard and component repair.',
     gradient: 'from-primary-blue to-accent-green',
+    image : 'https://images.unsplash.com/photo-1648337564744-f919c7c2fc02?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
   },
   {
     icon: ThumbsUp,
     title: 'Comprehensive Warranty',
     description: 'If the same issue reoccurs within 6 months, the repair is on us.',
     gradient: 'from-accent-green to-primary-cyan',
+    image : 'https://images.unsplash.com/photo-1633526543814-9718c8922b7a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
   }
 ]
 
