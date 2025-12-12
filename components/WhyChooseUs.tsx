@@ -113,7 +113,7 @@ export default function WhyChooseUs() {
                     src={feature.image}
                     alt={feature.title}
                     fill
-                    className="object-cover opacity-10 group-hover:opacity-20 transition-opacity duration-300"
+                    className="object-cover opacity-25 group-hover:opacity-5 transition-opacity duration-300"
                   />
                 </div>
               )}
