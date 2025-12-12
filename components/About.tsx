@@ -50,12 +50,12 @@ export default function About() {
                 quality={90}
               />
               {/* Overlay with gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/40 via-primary-cyan/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 via-primary-cyan/40 to-transparent" />
               {/* Content overlay */}
               <div className="absolute inset-0 flex items-end p-6">
                 <div className="text-white">
-                  <h3 className="text-2xl font-bold mb-2">Expert Service</h3>
-                  <p className="text-2xl font-bold mb-1 text-primary-light/90">Professional & Reliable</p>
+                  <h3 className="text-2xl font-bold mb-2 text-[#0A1E2D]">Expert Service</h3>
+                  <p className="text-2xl font-bold mb-1 text-[#064B57]">Professional & Reliable</p>
                 </div>
               </div>
             </div>

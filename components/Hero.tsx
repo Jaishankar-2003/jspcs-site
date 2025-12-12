@@ -146,7 +146,7 @@ export default function Hero() {
               href="https://www.instagram.com/jaishankarpcservices"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300 backdrop-blur-sm"
+              className=" w-12 h-12 rounded-xl bg-gradient-to-br from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4] flex items-center justify-center text-white shadow-sm hover:shadow-[0_0_15px_#DD2A7B] transition-all duration-300 "
               whileHover={{ scale: 1.15, y: -3 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Instagram"
