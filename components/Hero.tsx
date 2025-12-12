@@ -72,9 +72,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-gradient">JAI SHANKAR PC</span>
+            <span className="text-gradient">JAI SHANKAR </span>
             <br />
-            <span className="text-white">SERVICES</span>
+            <span className="text-white">PC SERVICES</span>
           </motion.h1>
 
           <motion.p

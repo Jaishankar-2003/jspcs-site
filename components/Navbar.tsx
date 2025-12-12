@@ -47,7 +47,8 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-primary-light/80 hover:text-primary-cyan transition-colors font-medium"
+                className="text-white/90 hover:text-primary-cyan font-semibold tracking-wide transition-colors"
+                // text-primary-light hover:text-primary-cyan transition-colors font-medium
               >
                 {link.label}
               </a>
@@ -58,10 +59,30 @@ export default function Navbar() {
                 href="https://www.linkedin.com/company/jai-shankar-pc-services"
                 target="_blank"
                 rel="noopener noreferrer"
+
+              /*
                 className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#0077B5]/50 transition-all duration-300"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="LinkedIn"
+
+              */
+
+                className="
+                 w-9 h-9 rounded-xl 
+                bg-gradient-to-br from-[#0A66C2] to-[#004182]
+                flex items-center justify-center 
+                text-white 
+                shadow-sm
+                hover:shadow-[0_0_15px_#0A66C2] 
+                transition-all duration-300
+              "
+              whileHover={{ scale: 1.15, y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="LinkedIn"
+
+
+
               >
                 <Linkedin className="w-4 h-4" />
               </motion.a>
@@ -80,10 +101,28 @@ export default function Navbar() {
                 href="https://www.instagram.com/jaishankarpcservices"
                 target="_blank"
                 rel="noopener noreferrer"
+
+              /*
+
                 className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
+              */
+
+                  className="
+                  w-9 h-9 rounded-xl
+                  bg-gradient-to-br from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4]
+                  flex items-center justify-center
+                  text-white
+                  shadow-sm
+                  hover:shadow-[0_0_15px_#DD2A7B]
+                  transition-all duration-300
+                "
+                whileHover={{ scale: 1.15, y: -2 }}
+                whileTap={{ scale: 0.9 }}
+
                 aria-label="Instagram"
+
               >
                 <Instagram className="w-4 h-4" />
               </motion.a>
@@ -153,7 +192,16 @@ export default function Navbar() {
                 href="https://www.instagram.com/jaishankarpcservices"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white"
+
+                className=" w-9 h-9 rounded-xl
+                  bg-gradient-to-br from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4]
+                  flex items-center justify-center
+                  text-white
+                  shadow-sm
+                  hover:shadow-[0_0_15px_#DD2A7B]
+                  transition-all duration-300 "
+
+
                 whileTap={{ scale: 0.9 }}
                 aria-label="Instagram"
               >
