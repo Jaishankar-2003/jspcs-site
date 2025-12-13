@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, MessageCircle, Linkedin, Facebook, Instagram } from 'lucide-react'
+import { Phone, MessageCircle, Linkedin, Facebook, Instagram , UserRoundSearch } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Logo from './Logo'
@@ -93,17 +93,39 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <motion.a
-              href="tel:9842139997"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScv7FSVPdyseb7rq10Ev7MkHIKXxh_huwIAQxzo2Sx2VpgV3Q/viewform?usp=sharing&ouid=113853534703158315370"
+               target="_blank"
+              rel="noopener noreferrer"
               className="group relative px-8 py-4 bg-primary-blue text-white rounded-full font-semibold text-lg overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <span className="absolute inset-0 bg-gradient-to-r from-primary-blue to-primary-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative flex items-center gap-2">
-                <Phone className="w-5 h-5" />
-                Call Now
+                <UserRoundSearch className="w-5 h-5" />
+                Enquiry now
               </span>
             </motion.a>
+
+
+            <motion.a
+              href="https://drive.google.com/file/d/1ZLT5NoypFX1r04CV5FgcJdy6WLOUAKNT/view?usp=sharing"
+               target="_blank"
+              rel="noopener noreferrer"
+              className="group relative px-8 py-4 bg-primary-blue text-white rounded-full font-semibold text-lg overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-primary-blue to-primary-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="relative flex items-center gap-2">
+                <UserRoundSearch className="w-5 h-5" />
+                AMC Service Broucher
+              </span>
+            </motion.a>
+
+
+
+
 
             <motion.a
               href="https://wa.me/919842139997"

@@ -271,7 +271,7 @@ export default function PCBuildsShowcase() {
                   {/* <div className="relative w-full lg:w-1/2 h-64 lg:h-auto min-h-[300px] overflow-hidden"> */}
 
                   <div
-                  className="relative w-full lg:w-1/2 h-64 lg:h-auto min-h-[300px] overflow-hidden cursor-zoom-in"
+                  className="relative w-full lg:w-1/2 h-64 lg:h-auto min-h-[300px] overflow-hidden cursor-pointer"
                   onClick={(e) => {
                     // Prevent opening preview when dragging
                     if  (dragDistance.current > 10) return;
