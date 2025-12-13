@@ -76,3 +76,10 @@ html {
   background: rgba(49, 195, 242, 0.8);
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+

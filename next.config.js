@@ -9,6 +9,19 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'logos-world.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.seeklogo.com',
+        port: '',
+        pathname: '/**',
+      },
+    
     ],
   },
 }

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useState } from 'react'
 import { Award, GraduationCap, Shield, FileText, FileCheck, Badge } from 'lucide-react'
 
 const licenses = [
@@ -9,8 +10,9 @@ const licenses = [
     icon: Award,
     title: 'Chip-Level Repair Certification',
     issuedBy: 'International Electronics Association',
-    issuedDate: 'January 2023',
+    issuedDate: 'March 2025',
     iconColor: 'from-primary-blue to-primary-cyan',
+    image: '/certificates/chip.png', // local image in public/certificates
   },
   {
     icon: GraduationCap,
@@ -18,6 +20,7 @@ const licenses = [
     issuedBy: 'Tech Repair Institute',
     issuedDate: 'March 2022',
     iconColor: 'from-primary-cyan to-secondary-sky',
+    image: '/certificates/motherboard-cert.png',
   },
   {
     icon: Shield,
@@ -25,6 +28,7 @@ const licenses = [
     issuedBy: 'Data Recovery Council',
     issuedDate: 'June 2023',
     iconColor: 'from-accent-green to-primary-cyan',
+    image: '/certificates/data-recovery-cert.png',
   },
   {
     icon: FileText,
@@ -32,6 +36,7 @@ const licenses = [
     issuedBy: 'Microsoft Partner Network',
     issuedDate: 'September 2022',
     iconColor: 'from-primary-blue to-accent-green',
+    image: '/certificates/os-install-cert.png',
   },
   {
     icon: FileCheck,
@@ -39,6 +44,7 @@ const licenses = [
     issuedBy: 'Network Professional Association',
     issuedDate: 'November 2023',
     iconColor: 'from-secondary-sky to-primary-cyan',
+    image: '/certificates/network-config-cert.png',
   },
   {
     icon: Badge,
@@ -46,10 +52,13 @@ const licenses = [
     issuedBy: 'Service Quality Institute',
     issuedDate: 'April 2024',
     iconColor: 'from-primary-cyan to-primary-blue',
+    image: '/certificates/customer-service-cert.png',
   },
 ]
 
 export default function LicensesCertifications() {
+  const [previewImage, setPreviewImage] = useState<string | null>(null)
+
   return (
     <section id="licenses-certifications" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background Image */}
@@ -63,6 +72,7 @@ export default function LicensesCertifications() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary-dark via-primary-dark/95 to-primary-dark" />
       </div>
+
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -88,7 +98,8 @@ export default function LicensesCertifications() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="group"
+              className="group cursor-zoom-in"
+              onClick={() => setPreviewImage(license.image)} // Open preview
             >
               <div className="glass-strong rounded-2xl p-6 h-full neon-border transition-all duration-300 hover:border-primary-cyan/80 hover:shadow-[0_0_40px_rgba(49,195,242,0.4)] relative overflow-hidden">
                 {/* Icon */}
@@ -126,7 +137,22 @@ export default function LicensesCertifications() {
           ))}
         </div>
       </div>
+
+      {/* Certificate Preview Modal */}
+      {previewImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+          onClick={() => setPreviewImage(null)}
+        >
+          <Image
+            src={previewImage}
+            alt="Certificate Preview"
+            width={800}
+            height={600}
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
+      )}
     </section>
   )
 }
-
