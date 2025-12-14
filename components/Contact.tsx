@@ -258,7 +258,7 @@ export default function Contact() {
           className="mt-12 rounded-2xl overflow-hidden neon-border"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.0!3d13.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzAwLjAiTiA4MMKwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.7793033931525!2d78.10006687590037!3d9.952311773851735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c9900f9e875f%3A0xf93138e3c33df70f!2sJAI%20SHANKAR%20PC%20SERVICES!5e0!3m2!1sen!2sin!4v1765730817609!5m2!1sen!2sin"
             width="100%"
             height="400"
             style={{ border: 0 }}

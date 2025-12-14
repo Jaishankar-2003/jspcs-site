@@ -102,7 +102,21 @@ export default function LicensesCertifications() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, scale: 1.02 }}
               className="group cursor-pointer"
-              onClick={() => setPreviewImage(license.image)} // Open preview
+              // onClick={() => setPreviewImage(license.image)} // Open preview
+
+              onClick={() => {
+                // NEW: only redirect when explicitly defined as link
+                if (license.type === 'link' && license.url) {
+                  window.open(license.url, '_blank', 'noopener,noreferrer')
+                  return
+                }
+              
+                // OLD behavior (unchanged)
+                if (license.image) {
+                  setPreviewImage(license.image)
+                }
+              }}
+
             >
               <div className="glass-strong rounded-2xl p-6 h-full neon-border transition-all duration-300 hover:border-primary-cyan/80 hover:shadow-[0_0_40px_rgba(49,195,242,0.4)] relative overflow-hidden">
                 {/* Icon */}
