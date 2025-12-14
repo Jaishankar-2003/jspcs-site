@@ -17,7 +17,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'images.seeklogo.com',
+        hostname: 'udyamregistration.gov.in',
         port: '',
         pathname: '/**',
       },

@@ -100,7 +100,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-primary-blue to-primary-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="absolute inset-0 bg-gradient-to-r from-[#171C2C] to-[#2A3150] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative flex items-center gap-2">
                 <UserRoundSearch className="w-5 h-5" />
                 Enquiry now

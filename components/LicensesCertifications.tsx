@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
 import { Award, GraduationCap, Shield, FileText, FileCheck, Badge } from 'lucide-react'
+import { image } from 'framer-motion/client'
 
 const licenses = [
   {
@@ -16,11 +17,13 @@ const licenses = [
   },
   {
     icon: GraduationCap,
-    title: 'Advanced Motherboard Repair',
+    title: 'MSME CERTIFIED',
     issuedBy: 'Tech Repair Institute',
     issuedDate: 'March 2022',
     iconColor: 'from-primary-cyan to-secondary-sky',
-    image: '/certificates/motherboard-cert.png',
+    image : '',
+    type : 'link',
+    url: 'https://udyamregistration.gov.in/verifyudyambarcode.aspx?verifyudrn=j50RCd7n0wmncFGccmyrD8D3NynSpw2QZsbSnDiEPCM=',
   },
   {
     icon: Shield,
