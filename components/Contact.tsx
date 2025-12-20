@@ -89,7 +89,7 @@ export default function Contact() {
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">WhatsApp.</h3>
                   <a
                     href="https://wa.me/919842139997"
                     target="_blank"
