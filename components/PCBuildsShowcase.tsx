@@ -251,7 +251,7 @@ export default function PCBuildsShowcase() {
 
               <div
                 className="
-                  glass-strong rounded-2xl overflow-hidden h-full
+                  glass-strong rounded-2xl overflow-hidden h-full 
                   neon-border transition-all duration-300
                   hover:border-primary-cyan/80
                   hover:shadow-[0_20px_60px_rgba(49,195,242,0.35)]

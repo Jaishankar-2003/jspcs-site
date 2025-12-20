@@ -154,7 +154,7 @@ export default function Hero() {
               <Linkedin className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="https://www.facebook.com/jaishankarpcservices"
+              href="https://www.facebook.com/shankar.jai.961"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300 backdrop-blur-sm"
@@ -201,7 +201,7 @@ export default function Hero() {
               <Linkedin className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="https://www.facebook.com/jaishankarpcservices"
+              href="https://www.facebook.com/shankar.jai.961"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300 backdrop-blur-sm"

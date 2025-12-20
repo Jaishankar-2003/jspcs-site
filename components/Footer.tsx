@@ -40,7 +40,7 @@ export default function Footer() {
                   <Linkedin className="w-5 h-5" />
                 </motion.a>
                 <motion.a
-                  href="https://www.facebook.com/jaishankarpcservices"
+                  href="https://www.facebook.com/shankar.jai.961"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300"
@@ -158,7 +158,7 @@ export default function Footer() {
                   <Linkedin className="w-4 h-4" />
                 </motion.a>
                 <motion.a
-                  href="https://www.facebook.com/jaishankarpcservices"
+                  href="https://www.facebook.com/shankar.jai.961"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300"

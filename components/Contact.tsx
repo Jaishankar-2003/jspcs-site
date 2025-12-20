@@ -122,7 +122,7 @@ export default function Contact() {
                   <span className="text-sm">LinkedIn</span>
                 </motion.a>
                 <motion.a
-                  href="https://www.facebook.com/jaishankarpcservices"
+                  href="https://www.facebook.com/shankar.jai.961"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-br from-[#1877F2] to-[#0A5BC4] flex items-center justify-center gap-2 text-white font-medium hover:shadow-lg hover:shadow-[#1877F2]/50 transition-all duration-300"
