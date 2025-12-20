@@ -134,7 +134,7 @@ export default function Contact() {
                   <span className="text-sm">Facebook</span>
                 </motion.a>
                 <motion.a
-                  href="https://www.instagram.com/jaishankarpcservices"
+                  href="https://www.instagram.com/jaishankar_pc_services?igsh=MXBudW81NWhna2lhcw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-br from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4] flex items-center justify-center gap-2 text-white font-medium hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"

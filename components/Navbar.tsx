@@ -98,7 +98,7 @@ export default function Navbar() {
                 <Facebook className="w-4 h-4" />
               </motion.a>
               <motion.a
-                href="https://www.instagram.com/jaishankarpcservices"
+                href="https://www.instagram.com/jaishankar_pc_services?igsh=MXBudW81NWhna2lhcw=="
                 target="_blank"
                 rel="noopener noreferrer"
 
@@ -189,7 +189,7 @@ export default function Navbar() {
                 <Facebook className="w-5 h-5" />
               </motion.a>
               <motion.a
-                href="https://www.instagram.com/jaishankarpcservices"
+                href="https://www.instagram.com/jaishankar_pc_services?igsh=MXBudW81NWhna2lhcw=="
                 target="_blank"
                 rel="noopener noreferrer"
 
