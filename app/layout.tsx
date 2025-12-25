@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: 'Jai Shankar PC Services | Expert PC Repair & Chip-Level Service',
   description: 'Expert PC Repair, Chip-Level Service, Custom PC Builds, and Laptop Solutions. 5+ years of experience with genuine parts and doorstep pickup & delivery.',
   keywords: 'PC repair, laptop repair, chip-level service, custom PC builds, computer repair, Chennai',
+
+  icons : {
+    icon: "/logo.png"
+  }
 }
 
 export default function RootLayout({
