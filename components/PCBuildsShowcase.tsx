@@ -7,7 +7,8 @@ import { useEffect, useRef, useState } from 'react'
 
 const pcBuilds = [
   {
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    //https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
+    image: '/pc build/build1.jpeg?w=1000&q=80',
     title: 'Ultra Gaming Beast',
     description: 'High-end gaming rig built for 4K gaming and streaming. Features RGB lighting and premium cooling solutions.',
     specs: [
@@ -21,7 +22,8 @@ const pcBuilds = [
     gradient: 'from-primary-blue to-primary-cyan',
   },
   {
-    image: 'https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    //https://images.unsplash.com/photo-1587831990711-23ca6441447b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80
+    image: '/pc build/build2.jpeg',
     title: 'Professional Workstation',
     description: 'Powerful workstation optimized for content creation, video editing, and 3D rendering. Built for professionals.',
     specs: [
@@ -35,7 +37,7 @@ const pcBuilds = [
     gradient: 'from-primary-cyan to-secondary-sky',
   },
   {
-    image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/pc build/build3.jpeg',
     title: 'Budget Performance PC',
     description: 'Affordable build that delivers excellent performance for gaming and productivity without breaking the bank.',
     specs: [
@@ -49,7 +51,7 @@ const pcBuilds = [
     gradient: 'from-accent-green to-primary-cyan',
   },
   {
-    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/pc build/build4.jpeg',
     title: 'Compact Mini-ITX Build',
     description: 'Small form factor PC with powerful components. Perfect for space-constrained setups without compromising performance.',
     specs: [
@@ -63,7 +65,7 @@ const pcBuilds = [
     gradient: 'from-primary-blue to-accent-green',
   },
   {
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/pc build/build5.jpeg',
     title: 'Silent Powerhouse',
     description: 'Whisper-quiet build focused on silence without sacrificing performance. Ideal for home offices and studios.',
     specs: [
@@ -77,7 +79,7 @@ const pcBuilds = [
     gradient: 'from-secondary-sky to-primary-cyan',
   },
   {
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: '/pc build/build6.jpeg',
     title: 'RGB Showcase Build',
     description: 'Stunning visual build with synchronized RGB lighting throughout. Performance meets aesthetics.',
     specs: [

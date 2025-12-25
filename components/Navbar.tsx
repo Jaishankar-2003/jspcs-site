@@ -18,12 +18,15 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
+    { href: '#pc-builds', label: 'PC BUILDS' },
     { href: '#about', label: 'About' },
     { href: '#services', label: 'Services' },
     { href: '#why-choose-us', label: 'Why Us' },
     { href: '#testimonials', label: 'Reviews' },
     { href: '#contact', label: 'Contact' },
   ]
+
+
 
   return (
     <motion.nav
@@ -44,15 +47,19 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-white/90 hover:text-primary-cyan font-semibold tracking-wide transition-colors"
-                // text-primary-light hover:text-primary-cyan transition-colors font-medium
-              >
-                {link.label}
-              </a>
-            ))}
+            <a
+              key={link.href}
+              href={link.href}
+              className={`tracking-wide transition-colors ${
+                link.label === 'PC BUILDS'
+                  ? 'font-extrabold text-primary-cyan'
+                  : 'font-medium text-white/90 hover:text-primary-cyan'
+              }`}
+            >
+              {link.label}
+            </a>
+          ))}
+
             {/* Social Media Icons */}
             <div className="flex items-center gap-2 ml-2 border-l border-white/20 pl-4">
               <motion.a
@@ -157,15 +164,19 @@ export default function Navbar() {
             className="md:hidden pb-4 space-y-4"
           >
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block text-primary-light/80 hover:text-primary-cyan transition-colors font-medium py-2"
-              >
-                {link.label}
-              </a>
-            ))}
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className={`block py-2 transition-colors ${
+                link.label === 'PC BUILDS'
+                  ? 'font-extrabold text-primary-cyan'
+                  : 'font-medium text-primary-light/80 hover:text-primary-cyan'
+              }`}
+            >
+              {link.label}
+            </a>
+          ))}
             {/* Social Media Links - Mobile */}
             <div className="flex items-center justify-center gap-3 py-4 border-t border-white/10">
               <motion.a
