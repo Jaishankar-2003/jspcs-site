@@ -40,7 +40,7 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 grid-cols-1">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -108,7 +108,8 @@ export default function Contact() {
               <p className="text-primary-light/70 text-sm mb-4">
                 Stay connected for updates, tips, and exclusive offers
               </p>
-              <div className="flex items-center gap-3">
+              
+              <div className="flex flex-col md:flex-row items-center gap-3">
                 <motion.a
                   href="https://www.linkedin.com/company/jai-shankar-pc-services"
                   target="_blank"
