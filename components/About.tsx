@@ -72,11 +72,17 @@ export default function About() {
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
               <span className="text-gradient">About</span> Us
             </h2>
-            <p className="text-lg text-primary-light/80 mb-8 leading-relaxed">
+            <p className="text-xl sm:text-1xl text-primary-light/90 mb-9 leading-relaxed">
               At <span className="text-primary-cyan font-semibold">Jai Shankar PC Services</span>, we bring{' '}
-              <span className="text-accent-green font-semibold">5+ years of chip-level expertise</span> to ensure your devices get the highest-quality care. 
-              From simple fixes to advanced motherboard repairs, we deliver fast, affordable, and reliable technical service with genuine spare parts and doorstep pickup & delivery.
+              is a professional computer service center specializing in PC and
+              laptop repairs, upgrades, and custom solutions.  
+              <span className="text-accent-green font-semibold">  5+ years of chip-level expertise</span> to ensure your devices get the highest-quality care. 
             </p>
+            <p className="text-xl text-primary-light/90 mb-9 leading-relaxed"> From simple fixes to advanced motherboard repairs, we diagnose and fix problems that most regular service centers cannot.</p>
+            <p className="text-xl text-primary-light/90 mb-9 leading-relaxed"> Our mission is simple — provide honest service, transparent pricing, and long-lasting repair solutions using genuine parts.</p>
+
+
+
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {features.map((feature, index) => (
@@ -100,3 +106,174 @@ export default function About() {
   )
 }
 
+
+//=======================================================================================================================================
+
+
+// 'use client'
+
+// import { motion } from 'framer-motion'
+// import {
+//   CheckCircle2,
+//   Clock,
+//   Package,
+//   Truck,
+//   Cpu,
+//   ShieldCheck,
+// } from 'lucide-react'
+// import Image from 'next/image'
+
+// export default function AboutPage() {
+//   const highlights = [
+//     {
+//       icon: Clock,
+//       title: '5+ Years Experience',
+//       text: 'Professional chip-level diagnosis and repair experience.',
+//     },
+//     {
+//       icon: Cpu,
+//       title: 'Advanced Repairs',
+//       text: 'Motherboard, GPU, power issues, and complex hardware faults.',
+//     },
+//     {
+//       icon: Package,
+//       title: 'Genuine Parts',
+//       text: 'Only original and high-quality replacement components used.',
+//     },
+//     {
+//       icon: Truck,
+//       title: 'Doorstep Service',
+//       text: 'Pickup & delivery available for hassle-free repairs.',
+//     },
+//     {
+//       icon: ShieldCheck,
+//       title: 'Trusted & Secure',
+//       text: 'Your data and hardware are handled with full responsibility.',
+//     },
+//     {
+//       icon: CheckCircle2,
+//       title: 'Fast Turnaround',
+//       text: 'Quick diagnosis and transparent repair timelines.',
+//     },
+//   ]
+
+//   return (
+//     <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+//       {/* Background */}
+//       <div className="absolute inset-0">
+//         <Image
+//           src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+//           alt="Technology Background"
+//           fill
+//           className="object-cover opacity-10"
+//           quality={60}
+//         />
+//         <div className="absolute inset-0 bg-primary-dark/90" />
+//       </div>
+
+//       <div className="relative z-10 max-w-7xl mx-auto">
+//         {/* Header */}
+//         <motion.div
+//           initial={{ opacity: 0, y: 30 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           viewport={{ once: true }}
+//           transition={{ duration: 0.8 }}
+//           className="text-center max-w-3xl mx-auto mb-20"
+//         >
+//           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+//             About <span className="text-gradient">Jai Shankar PC Services</span>
+//           </h1>
+//           <p className="text-lg text-primary-light/80 leading-relaxed">
+//             Reliable PC & laptop repair solutions built on experience, trust,
+//             and technical excellence.
+//           </p>
+//         </motion.div>
+
+//         {/* Main Content */}
+//         <div className="grid md:grid-cols-2 gap-14 items-center mb-24">
+//           {/* Image */}
+//           <motion.div
+//             initial={{ opacity: 0, x: -30 }}
+//             whileInView={{ opacity: 1, x: 0 }}
+//             viewport={{ once: true }}
+//             transition={{ duration: 0.8 }}
+//             className="relative aspect-square rounded-2xl overflow-hidden glass-strong neon-border"
+//           >
+//             <Image
+//               src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+//               alt="PC Repair Workspace"
+//               fill
+//               className="object-cover"
+//               quality={90}
+//             />
+//             <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/30 via-primary-cyan/30 to-transparent" />
+//           </motion.div>
+
+//           {/* Text */}
+//           <motion.div
+//             initial={{ opacity: 0, x: 30 }}
+//             whileInView={{ opacity: 1, x: 0 }}
+//             viewport={{ once: true }}
+//             transition={{ duration: 0.8 }}
+//           >
+//             <h2 className="text-3xl font-bold mb-6">
+//               Who We Are
+//             </h2>
+//             <p className="text-primary-light/80 mb-5 leading-relaxed">
+//               <span className="text-primary-cyan font-semibold">
+//                 Jai Shankar PC Services
+//               </span>{' '}
+//               is a professional computer service center specializing in PC and
+//               laptop repairs, upgrades, and custom solutions.
+//             </p>
+//             <p className="text-primary-light/80 mb-5 leading-relaxed">
+//               With over{' '}
+//               <span className="text-accent-green font-semibold">
+//                 5+ years of hands-on chip-level experience
+//               </span>
+//               , we diagnose and fix problems that most regular service centers
+//               cannot.
+//             </p>
+//             <p className="text-primary-light/80 leading-relaxed">
+//               Our mission is simple — provide honest service, transparent
+//               pricing, and long-lasting repair solutions using genuine parts.
+//             </p>
+//           </motion.div>
+//         </div>
+
+//         {/* Highlights */}
+//         <motion.div
+//           initial={{ opacity: 0, y: 30 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           viewport={{ once: true }}
+//           transition={{ duration: 0.8 }}
+//         >
+//           <h2 className="text-3xl font-bold text-center mb-12">
+//             Why Choose Us
+//           </h2>
+
+//           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+//             {highlights.map((item, index) => (
+//               <motion.div
+//                 key={index}
+//                 initial={{ opacity: 0, y: 20 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 viewport={{ once: true }}
+//                 transition={{ duration: 0.5, delay: index * 0.1 }}
+//                 className="glass rounded-xl p-6 neon-border"
+//               >
+//                 <item.icon className="w-8 h-8 text-primary-cyan mb-4" />
+//                 <h3 className="text-xl font-semibold mb-2">
+//                   {item.title}
+//                 </h3>
+//                 <p className="text-primary-light/75 text-sm">
+//                   {item.text}
+//                 </p>
+//               </motion.div>
+//             ))}
+//           </div>
+//         </motion.div>
+//       </div>
+//     </section>
+//   )
+// }
