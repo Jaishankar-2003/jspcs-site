@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, MessageCircle, Linkedin, Facebook, Instagram , UserRoundSearch } from 'lucide-react'
+import { Phone, MessageCircle, Linkedin, Facebook, Instagram, UserRoundSearch } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Logo from './Logo'
@@ -20,17 +20,34 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-          alt="PC Build Background"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-        />
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/95 via-primary-dark/90 to-primary-dark/95" />
+      {/* Background Media */}
+      <div className="absolute inset-0 z-0 overflow-hidden bg-black pointer-events-none">
+
+        {/* Mobile Video Background (YouTube Short: rV7JJeoOFTo) */}
+        {/* We make it very large to hide YouTube UI and black bars, centering it perfectly */}
+        <div className="absolute inset-0 w-full h-full sm:hidden">
+          <iframe
+            className="absolute top-1/2 left-1/2 w-[300vw] h-[150vh] -translate-x-1/2 -translate-y-1/2 opacity-100"
+            src="https://www.youtube.com/embed/rV7JJeoOFTo?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=rV7JJeoOFTo&modestbranding=1&playsinline=1"
+            title="Mobile Background Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
+
+        {/* Desktop Video Background (Standard YouTube: soUn1sJFMp4) */}
+        <div className="absolute inset-0 w-full h-full hidden sm:block">
+          <iframe
+            className="absolute top-1/2 left-1/2 w-[150vw] h-[150vh] min-w-[1920px] min-h-[1080px] -translate-x-1/2 -translate-y-1/2 opacity-60"
+            src="https://www.youtube.com/embed/soUn1sJFMp4?start=25&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=soUn1sJFMp4&modestbranding=1&playsinline=1"
+            title="Desktop Background Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
+
+        {/* Dynamic Dark Overlay for Readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/95 via-primary-dark/30 to-primary-dark/95" />
       </div>
 
       {/* Animated Background Effects */}
@@ -53,7 +70,7 @@ export default function Hero() {
             transition: 'all 0.4s ease-out',
           }}
         />
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(49,195,242,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(49,195,242,0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
       </div>
@@ -94,13 +111,13 @@ export default function Hero() {
           >
             <motion.a
               href="https://docs.google.com/forms/d/e/1FAIpQLScv7FSVPdyseb7rq10Ev7MkHIKXxh_huwIAQxzo2Sx2VpgV3Q/viewform?usp=sharing&ouid=113853534703158315370"
-               target="_blank"
+              target="_blank"
               rel="noopener noreferrer"
               className="group relative px-8 py-4 bg-primary-blue text-white rounded-full font-semibold text-lg overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-[#171C2C] to-[#2A3150] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="absolute inset-0 bg-gradient-to-r from-primary-blue to-primary-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative flex items-center gap-2">
                 <UserRoundSearch className="w-5 h-5" />
                 Enquiry now
@@ -110,7 +127,7 @@ export default function Hero() {
 
             <motion.a
               href="https://drive.google.com/file/d/1ZLT5NoypFX1r04CV5FgcJdy6WLOUAKNT/view?usp=sharing"
-               target="_blank"
+              target="_blank"
               rel="noopener noreferrer"
               className="group relative px-8 py-4 bg-primary-blue text-white rounded-full font-semibold text-lg overflow-hidden"
               whileHover={{ scale: 1.05 }}
@@ -131,18 +148,18 @@ export default function Hero() {
               href="https://wa.me/919842139997"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative px-8 py-4 glass border-primary-cyan/50 text-white rounded-full font-semibold text-lg overflow-hidden neon-border"
+              className="group relative px-8 py-4 bg-[#5be38a] text-white rounded-full font-semibold text-lg overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            > 
-              <span className="absolute inset-0 bg-[#25D366]/0  group-hover:bg-[#25D366]/50 transition-all duration-300" />
+            >
+              <span className="absolute inset-0 bg-[#25D366] opacity-0 group-hover:opacity-100 transition-all duration-300" />
               <span className="relative flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp Chat
               </span>
             </motion.a>
-{/* ----------------------------------------------------------------------------- */}
-<motion.a
+            {/* ----------------------------------------------------------------------------- */}
+            <motion.a
               href="https://www.linkedin.com/company/jai-shankar-pc-services"
               target="_blank"
               rel="noopener noreferrer"
@@ -177,7 +194,7 @@ export default function Hero() {
             </motion.a>
 
 
-{/* ----------------------------------------------------------------------------- */}
+            {/* ----------------------------------------------------------------------------- */}
 
           </motion.div>
 
@@ -188,7 +205,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-             {/* <span className="text-primary-light/60 text-sm mr-2">Follow us:</span> 
+            {/* <span className="text-primary-light/60 text-sm mr-2">Follow us:</span> 
             <motion.a
               href="https://www.linkedin.com/company/jai-shankar-pc-services"
               target="_blank"

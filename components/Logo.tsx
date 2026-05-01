@@ -37,12 +37,15 @@ export default function Logo({
       {/* Logo Text with Enhanced Styling */}
       {showText && (
         <div className="flex flex-col gap-0.5">
-          <span className={`font-bold ${textSizeClasses[size]} text-gradient leading-tight tracking-tight`}>
-            JAI SHANKAR PC
-          </span>
-          <span className={`font-bold ${textSizeClasses[size]} text-white leading-tight tracking-tight drop-shadow-sm`}>
-            SERVICES
-          </span>
+          {/* <span className={`font-bold ${textSizeClasses[size]} text-gradient leading-tight tracking-tight`}>
+            JSPCS
+          </span> */}
+          <span className="font-extrabold text-xl sm:text-2xl md:text-3xl text-gradient leading-none tracking-[0.08em] drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]">
+  JSPCS
+</span>
+          {/* <span className={`font-bold ${textSizeClasses[size]} text-white leading-tight tracking-tight`}>
+            JSPCS
+          </span> */}
         </div>
       )}
     </motion.div>

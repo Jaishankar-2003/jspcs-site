@@ -9,6 +9,7 @@ import WhyChooseUs from '@/components/WhyChooseUs'
 import TrustedPartners from '@/components/TrustedPartners'
 import LicensesCertifications from '@/components/LicensesCertifications'
 import PCBuildsShowcase from '@/components/PCBuildsShowcase'
+import LatestPCUpdates from '@/components/LatestPCUpdates'
 import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -41,6 +42,7 @@ export default function Home() {
       <TrustedPartners />
       <LicensesCertifications />
       <PCBuildsShowcase />
+      <LatestPCUpdates />
       <Testimonials />
       <Contact />
       <Footer />

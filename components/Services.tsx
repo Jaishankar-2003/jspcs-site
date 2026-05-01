@@ -2,15 +2,15 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { 
-  Laptop, 
-  Cpu, 
-  Monitor, 
-  HardDrive, 
-  Shield, 
-  Database, 
-  Wifi, 
-  Zap 
+import {
+  Laptop,
+  Cpu,
+  Monitor,
+  HardDrive,
+  Shield,
+  Database,
+  Wifi,
+  Zap
 } from 'lucide-react'
 
 const services = [
