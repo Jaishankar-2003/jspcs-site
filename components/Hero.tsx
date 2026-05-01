@@ -126,7 +126,7 @@ export default function Hero() {
 
 
             <motion.a
-              href="https://drive.google.com/file/d/1ZLT5NoypFX1r04CV5FgcJdy6WLOUAKNT/view?usp=sharing"
+              href="https://drive.google.com/file/d/1gXJQW4t8s44Fh4vu-f2E0BJC5pXAKM9P/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative px-8 py-4 bg-primary-blue text-white rounded-full font-semibold text-lg overflow-hidden"
