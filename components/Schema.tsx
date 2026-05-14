@@ -23,21 +23,55 @@ export default function Schema() {
         address: {
             "@type": "PostalAddress",
             addressRegion: "Tamil Nadu",
-            addressCountry: "IN",
+            addressCountry: "India",
         },
 
-        serviceType: [
-            "Laptop Repair",
-            "Desktop Repair",
-            "Chip-Level Service",
-            "Custom PC Build",
-            "Gaming PC Service",
-            "AMC Services",
+        makesOffer: [
+            {
+                "@type": "Offer",
+                itemOffered: {
+                    "@type": "Service",
+                    name: "Laptop Repair",
+                },
+            },
+
+            {
+                "@type": "Offer",
+                itemOffered: {
+                    "@type": "Service",
+                    name: "Desktop Repair",
+                },
+            },
+
+            {
+                "@type": "Offer",
+                itemOffered: {
+                    "@type": "Service",
+                    name: "Chip-Level Service",
+                },
+            },
+
+            {
+                "@type": "Offer",
+                itemOffered: {
+                    "@type": "Service",
+                    name: "Custom Gaming PC Build",
+                },
+            },
         ],
+        // serviceType: [
+        //     "Laptop Repair",
+        //     "Desktop Repair",
+        //     "Chip-Level Service",
+        //     "Custom PC Build",
+        //     "Gaming PC Service",
+        //     "AMC Services",
+        // ],
 
         sameAs: [
-            "https://www.instagram.com/",
-            "https://www.facebook.com/"
+            "https://www.instagram.com/jaishankar_pc_services?igsh=MXBudW81NWhna2lhcw==",
+            "https://www.facebook.com/shankar.jai.961",
+            "https://www.linkedin.com/in/jai-shankar-pc-services-59a21a27b"
         ]
     }
 
