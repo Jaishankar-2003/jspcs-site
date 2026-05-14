@@ -5,13 +5,82 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Jai Shankar PC Services | Expert PC Repair & Chip-Level Service',
-  description: 'Expert PC Repair, Chip-Level Service, Custom PC Builds, and Laptop Solutions. 5+ years of experience with genuine parts and doorstep pickup & delivery.',
-  keywords: 'PC repair, laptop repair, chip-level service, custom PC builds, computer repair, Chennai',
 
-  icons : {
-    icon: "/logo.png"
-  }
+  // Add this section to the top of your metadata object
+  verification: {
+    google: 'C2TtYGnInkXnVSXJtFJxP9m8hgkW0WiDNnp4mgc3t6A',  // Optional if you need it
+  },
+
+  metadataBase: new URL('https://jspcs.online'),
+
+  title: 'JSPCS Online | Laptop & PC Repair Service |  Chip-Level Service in Tamil Nadu ',
+  description: 'Expert PC Repair, Chip-Level Service, Custom PC Builds, and Laptop Solutions across Tamil Nadu. Genuine parts with pickup & delivery.',
+  keywords: [
+    'laptop repair tamil nadu',
+    'pc repair service',
+    'computer repair service',
+    'chip level motherboard repair',
+    'desktop repair service',
+    'custom gaming pc build',
+    'gaming pc repair',
+    'pc upgrade service',
+    'data recovery service',
+    'doorstep laptop service',
+
+    // Chennai
+    'laptop repair chennai',
+    'pc repair chennai',
+    'computer service chennai',
+    'custom pc build chennai',
+    'gaming pc build chennai',
+    'computer amc service chennai',
+
+    // Madurai
+    'laptop repair madurai',
+    'pc repair madurai',
+    'computer service madurai',
+    'custom pc build madurai',
+    'gaming pc build madurai',
+    'computer amc service madurai',
+
+    // Business & Support
+    'annual maintenance contract',
+    'business it support',
+    'office computer maintenance',
+  ],
+
+  alternates: {
+    canonical: '/',
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: 'JSPCS Online | Laptop & PC Repair Service | Chip-Level Service in Tamil Nadu ',
+    description:
+      'Expert Laptop & PC Repair Services in Tamil Nadu',
+    url: 'https://jspcs.online',
+    siteName: 'JSPCS Online',
+    locale: 'en_IN',
+    type: 'website',
+  },
+
+  twitter: {
+    card: 'summary',
+    title: 'JSPCS Online',
+    description:
+      'Expert Laptop & PC Repair Services in Tamil Nadu',
+  },
+  icons: {
+    icon: "/logo.png",
+    apple: '/logo.png',
+  },
+  formatDetection: {
+    telephone: false,
+  },
 }
 
 export default function RootLayout({
