@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-secondary-dark/50 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* Business Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -92,6 +92,43 @@ export default function Footer() {
               <li>
                 <a href="#contact" className="text-primary-light/70 hover:text-primary-cyan transition-colors">
                   Contact
+                </a>
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Madurai Services */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          >
+            <h4 className="text-lg font-semibold text-white mb-4">Services in Madurai</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/laptop-service-center-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
+                  Laptop Repair Madurai
+                </a>
+              </li>
+              <li>
+                <a href="/computer-service-center-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
+                  Computer Repair Madurai
+                </a>
+              </li>
+              <li>
+                <a href="/chip-level-service-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
+                  Chip-Level Service Madurai
+                </a>
+              </li>
+              <li>
+                <a href="/custom-gaming-pc-build-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
+                  Custom Gaming PC Build Madurai
+                </a>
+              </li>
+              <li>
+                <a href="/desktop-repair-service-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
+                  Desktop Repair Madurai
                 </a>
               </li>
             </ul>
