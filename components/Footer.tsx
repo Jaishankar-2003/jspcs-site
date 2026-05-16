@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-secondary-dark/50 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mb-8">
           {/* Business Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -99,45 +99,44 @@ export default function Footer() {
 
           {/* Madurai Services */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20, x: -62 }}
+            whileInView={{ opacity: 1, y: 0, x: -62 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.15 }}
+          //className="-translate-x-[62px]"
           >
-            <h4 className="text-lg font-semibold text-white mb-4">Services in Madurai</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Brand Repairs</h4>
             <ul className="space-y-2">
-              <li>
-                <a href="/laptop-service-center-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
-                  Laptop Repair Madurai
-                </a>
-              </li>
-              <li>
-                <a href="/computer-service-center-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
-                  Computer Repair Madurai
-                </a>
-              </li>
-              <li>
-                <a href="/chip-level-service-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
-                  Chip-Level Service Madurai
-                </a>
-              </li>
-              <li>
-                <a href="/custom-gaming-pc-build-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
-                  Custom Gaming PC Build Madurai
-                </a>
-              </li>
-              <li>
-                <a href="/desktop-repair-service-in-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">
-                  Desktop Repair Madurai
-                </a>
-              </li>
+              <li><a href="/dell-laptop-repair-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">Dell Repair</a></li>
+              <li><a href="/hp-laptop-repair-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">HP Repair</a></li>
+              <li><a href="/lenovo-laptop-repair-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">Lenovo Repair</a></li>
+              <li><a href="/asus-laptop-repair-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">Asus Repair</a></li>
+              <li><a href="/msi-gaming-laptop-repair-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">MSI Repair</a></li>
+              <li><a href="/acer-laptop-repair-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">Acer Repair</a></li>
+            </ul>
+          </motion.div>
+
+          {/* Technical Services */}
+          <motion.div
+            initial={{ opacity: 0, y: 20, x: -139 }}
+            whileInView={{ opacity: 1, y: 0, x: -139 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.18 }}
+          >
+            <h4 className="text-lg font-semibold text-white mb-4">Technical Services</h4>
+            <ul className="space-y-2">
+              <li><a href="/motherboard-repair-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">Motherboard Repair</a></li>
+              <li><a href="/ssd-upgrade-service-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">SSD Upgrade</a></li>
+              <li><a href="/gpu-repair-service-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">GPU BGA Reball</a></li>
+              <li><a href="/data-recovery-service-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">Data Recovery</a></li>
+              <li><a href="/gaming-laptop-repair-madurai" className="text-primary-light/70 hover:text-primary-cyan transition-colors text-sm">Gaming Laptop Service</a></li>
             </ul>
           </motion.div>
 
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20, x: -139 }}
+            whileInView={{ opacity: 1, y: 0, x: -139 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
@@ -153,10 +152,10 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary-cyan" />
+                <Mail className="w-5 h-5 text-primary-cyan flex-shrink-0" />
                 <a
                   href="mailto:jaishankarpcservices2021@gmail.com"
-                  className="text-primary-light/70 hover:text-primary-cyan transition-colors break-all"
+                  className="text-primary-light/70 hover:text-primary-cyan transition-colors"
                 >
                   jaishankarpcservices2021@gmail.com
                 </a>

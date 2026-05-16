@@ -14,6 +14,8 @@ import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import ServiceCategories from '@/components/ServiceCategories'
+import RelatedArticles from '@/components/RelatedArticles'
 import { motion } from 'framer-motion'
 
 export default function Home() {
@@ -38,11 +40,13 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <ServiceCategories />
       <WhyChooseUs />
       <TrustedPartners />
       <LicensesCertifications />
       <PCBuildsShowcase />
       <LatestPCUpdates />
+      <RelatedArticles />
       <Testimonials />
       <Contact />
       <Footer />

@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { Phone, MessageCircle, MapPin, Clock, Star, CheckCircle, ChevronRight } from 'lucide-react'
+import RelatedServiceCards from './RelatedServiceCards'
+import RelatedArticles from './RelatedArticles'
 
 export interface FAQItem {
   question: string
@@ -316,36 +318,33 @@ export default function LocalSEOPageLayout({
         </section>
 
         {/* ── Related Pages / Internal Links ───────────────────── */}
-        {relatedPages.length > 0 && (
-          <section
-            className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-10 border-t border-white/5"
-            aria-label="Related Services"
-          >
-            <h2 className="text-lg font-bold text-white mb-4">Related Services in {city}</h2>
-            <ul className="flex flex-wrap gap-3">
-              {relatedPages.map((page) => (
-                <li key={page.href}>
-                  <Link
-                    href={page.href}
-                    className="inline-flex items-center gap-1 px-4 py-2 glass rounded-full text-sm text-primary-cyan hover:neon-border transition-all duration-200"
-                  >
-                    <ChevronRight className="w-3 h-3" />
-                    {page.label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link
-                  href="/"
-                  className="inline-flex items-center gap-1 px-4 py-2 glass rounded-full text-sm text-primary-light/60 hover:text-primary-cyan transition-colors"
-                >
-                  <ChevronRight className="w-3 h-3" />
-                  Back to Home
-                </Link>
-              </li>
-            </ul>
-          </section>
-        )}
+        <section
+          className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-10 border-t border-white/5"
+          aria-label="Related Services"
+        >
+          {relatedPages.length > 0 && (
+            <RelatedServiceCards 
+              slugs={relatedPages.map(p => p.href)} 
+              title={`More ${city} Repair Services`} 
+            />
+          )}
+
+          <div className="mt-12 pt-12 border-t border-white/5">
+            <RelatedArticles limit={3} />
+          </div>
+
+          <div className="mt-12 flex flex-wrap gap-3">
+            <li>
+              <Link
+                href="/"
+                className="inline-flex items-center gap-1 px-4 py-2 glass rounded-full text-sm text-primary-light/60 hover:text-primary-cyan transition-colors"
+              >
+                <ChevronRight className="w-3 h-3" />
+                Back to Home
+              </Link>
+            </li>
+          </div>
+        </section>
 
         {/* ── Footer ───────────────────────────────────────────── */}
         <footer className="border-t border-white/10 bg-secondary-dark/50 mt-8">

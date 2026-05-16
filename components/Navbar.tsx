@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import { Menu, X, Phone, Linkedin, Facebook, Instagram } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import Logo from './Logo'
+import ServiceMegaMenu from './ServiceMegaMenu'
+import QuickLinksScroll from './QuickLinksScroll'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -46,7 +48,8 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
+            <ServiceMegaMenu />
+            {navLinks.filter(l => l.label !== 'Services').map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -66,15 +69,6 @@ export default function Navbar() {
                 href="https://www.linkedin.com/company/jai-shankar-pc-services"
                 target="_blank"
                 rel="noopener noreferrer"
-
-              /*
-                className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#0077B5] to-[#005885] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#0077B5]/50 transition-all duration-300"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                aria-label="LinkedIn"
-
-              */
-
                 className="
                  w-9 h-9 rounded-xl 
                 bg-gradient-to-br from-[#0A66C2] to-[#004182]
@@ -87,9 +81,6 @@ export default function Navbar() {
               whileHover={{ scale: 1.15, y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="LinkedIn"
-
-
-
               >
                 <Linkedin className="w-4 h-4" />
               </motion.a>
@@ -108,14 +99,6 @@ export default function Navbar() {
                 href="https://www.instagram.com/jaishankar_pc_services?igsh=MXBudW81NWhna2lhcw=="
                 target="_blank"
                 rel="noopener noreferrer"
-
-              /*
-
-                className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#E4405F] via-[#F77737] to-[#FCAF45] flex items-center justify-center text-white hover:shadow-lg hover:shadow-[#E4405F]/50 transition-all duration-300"
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.9 }}
-              */
-
                   className="
                   w-9 h-9 rounded-xl
                   bg-gradient-to-br from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4]
@@ -154,6 +137,8 @@ export default function Navbar() {
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
+        <QuickLinksScroll />
+      </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
@@ -203,16 +188,7 @@ export default function Navbar() {
                 href="https://www.instagram.com/jaishankar_pc_services?igsh=MXBudW81NWhna2lhcw=="
                 target="_blank"
                 rel="noopener noreferrer"
-
-                className=" w-9 h-9 rounded-xl
-                  bg-gradient-to-br from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4]
-                  flex items-center justify-center
-                  text-white
-                  shadow-sm
-                  hover:shadow-[0_0_15px_#DD2A7B]
-                  transition-all duration-300 "
-
-
+                className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4] flex items-center justify-center text-white shadow-sm hover:shadow-[0_0_15px_#DD2A7B] transition-all duration-300"
                 whileTap={{ scale: 0.9 }}
                 aria-label="Instagram"
               >
@@ -228,7 +204,6 @@ export default function Navbar() {
             </motion.a>
           </motion.div>
         )}
-      </div>
     </motion.nav>
   )
 }
